@@ -1,0 +1,8 @@
+select decode(client,'globus','Roam-Fix','gtest','Roam-Fix',client) as client,country,operator,mccmnc,donor,round(sum(usage_mb),2) usage_mb 
+from CSC_Hourly_non3uk_temp where (mccmnc||'-'||donor) in(
+select distinct(mccmnc||'-'||donor) mccmnc_dnr from CSC_Hourly_non3uk_temp a,Multi_IMSI_Release_ranges b
+where client_imsi between b.IMSI_ST and b.IMSI_ED and type='Rel2'
+and mccmnc||'-'||donor not in(select distinct(mccmnc||'-'||donor) from REL2_Network_config)
+and client not in ('huawei','freedompop'))
+group by decode(client,'globus','Roam-Fix','gtest','Roam-Fix',client),country,operator,mccmnc,donor
+
