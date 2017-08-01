@@ -1,0 +1,13 @@
+Successfully added entries [4998].
+Failed entries [2].
+SNMP Trap successful for Host:Port:Oid [10.231.67.81:16038:1.3.6.1.4.1.11150.11.4.3.0].
+Value set as [1].
+SNMP Trap successful for Host:Port:Oid [10.231.67.81:16011:1.3.6.1.4.1.11150.11.4.3.0].
+Value set as [1].
+SNMP Trap successful for Host:Port:Oid [10.231.67.82:16038:1.3.6.1.4.1.11150.11.4.3.0].
+Value set as [1].
+SNMP Trap successful for Host:Port:Oid [10.231.67.82:16011:1.3.6.1.4.1.11150.11.4.3.0].
+Value set as [1].
+Timestamping and Move the Bulk Upload IMSI Mapping file. 
+Timestamping and Move the Status IMSI Mapping file. 
+For Failed entries please check the Log file and the SRS_CHECKPOINT Table. 
